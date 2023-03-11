@@ -1,0 +1,19 @@
+@import "./column/column.css";
+@import "./main/main.css";
+@import "./header/header.css";
+@import "./avatar/avatar.css";
+@import "./addButton/addButton.css";
+@import "./burgerButton/burgerButton.css";
+@import "./sendButton/sendButton.css";
+@import "./input/input.css";
+@import "./inputContainer/inputContainer.css";
+@import "./inputSeparator/inputSeparator.css";
+@import "./listContainer/listContainer.css";
+@import "./chatList/chatList.css";
+@import "./chat/chat.css";
+@import "./marks/index.css";
+
+/* TODO удалить */
+body {
+  /* background-color: lightgray; */
+}

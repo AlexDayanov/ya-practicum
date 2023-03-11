@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+}
+
+.header__chatapp {
+  height: 100px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+
+.header_gray {
+  background-color: var(--lightgray);
+}

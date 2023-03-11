@@ -1,0 +1,22 @@
+.addbutton {
+}
+
+.addbutton_shape_round {
+  border-radius: 50%;
+}
+
+.addbutton_size_m {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.addbutton_color_lightblue {
+  color: var(--lightblue);
+}
+
+.addbutton:hover {
+  box-sizing: border-box;
+  border: 1px solid var(--lightlilac);
+}

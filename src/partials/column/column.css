@@ -1,0 +1,22 @@
+.column {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.column__chatapp {
+  height: 100vh;
+  border: 1px solid var(--lightblue);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.column__chatlist {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.column__chat {
+  flex-grow: 1;
+}

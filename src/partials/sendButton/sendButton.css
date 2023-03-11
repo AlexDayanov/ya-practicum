@@ -1,0 +1,17 @@
+.sendbutton {
+}
+
+.sendbutton_size_m {
+  width: 30px;
+  height: 30px;
+}
+
+.sendbutton_color_lightblue {
+  color: var(--lightblue);
+}
+
+/* TODO не работает :hover */
+.sendbutton:hover {
+  box-sizing: border-box;
+  border: 1px solid var(--lightlilac);
+}

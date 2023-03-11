@@ -1,0 +1,21 @@
+{{!-- class=".input" --}}
+<label class="{{labelClassName}}">
+
+    {{!-- class="input__control border-color_blue" type="email" placeholder="Input hint" required --}}
+    <input class="{{inputClassName}}" name="{{name}}" value="{{value}}" type="{{type}}" placeholder="{{placeholder}}"
+        pattern="{{pattern}}" autocomplete="{{autocomplete}}" {{#if required}}required{{/if}} />
+
+    {{!-- class="input__hint">Input hint --}}
+    <span class="{{inputHintClassName}}">{{inputHint}}</span>
+
+    {{!-- class="input__error input__error_red input__error_font-size_15">Error message --}}
+    <span class="{{errorMessageClassName}}">{{errorMessage}}</span>
+
+</label>
+
+{{!--
+
+{{>input/input labelClassName="" inputClassName="" type="" value="" placeholder=""
+inputHintClassName="" inputHint="" errorMessageClassName="" errorMessage=""}}
+
+--}}

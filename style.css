@@ -1,0 +1,18 @@
+@import "./src/index.css";
+@import "./static/index.css";
+
+:root {
+  --lightblue: rgba(0, 26, 255, 0.46);
+  --lightgray: rgba(217, 217, 217, 0.46);
+  --white: rgba(255, 255, 255, 1);
+  --lightmint: rgba(245, 249, 243, 1);
+  --lightlilac: rgba(0, 26, 255, 0.46);
+  --red: rgba(255, 47, 47, 0.55);
+  --lightgreen: rgba(0, 177, 50, 0.46);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

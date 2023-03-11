@@ -1,0 +1,16 @@
+.listcontainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__listcontainer {
+  width: 100%;
+  min-width: min-content;
+  max-width: 1024px;
+  align-self: center;
+}
+
+.chat__listcontainer_max-width-1024px {
+  max-width: 1024px;
+}

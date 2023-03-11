@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="main">
+
+      <div class="column column__chatapp column__chatlist">
+
+        <div class="header header__chatapp header_gray">
+          {{>burgerButton/burgerButton }}
+          {{>input/input labelClassName="input input_wide" inputClassName="input__control
+          input__control_with-adjustable-height
+          input__control_border-color_blue" type="search" placeholder="Найти чат"}}
+          {{>addButton/addButton}}
+        </div>
+        
+        <aside class="listcontainer">
+          {{>chatList/chatList className="chatlist"}}
+        </aside>
+
+      </div>
+
+      <div class="column column__chatapp column__chat">
+
+        <div class="header header__chatapp header_gray">
+          {{>avatar/avatar className="avatar avatar_size_m avatar_shape_round" imgClassName="avatar__img"
+          src='./static/images/avatar1.jpeg' alt='avatar'}}
+          {{>input/input labelClassName="input input_wide" inputClassName="input__control
+          input__control_with-adjustable-height
+          input__control_border-color_blue" type="search" placeholder="Найти в сообщениях"}}
+          {{>addButton/addButton}}
+        </div>
+
+        <div class="listcontainer chat__listcontainer  chat__listcontainer_max-width-1024px">
+          <main class="chat">
+            {{>marks/checkMark}}{{>marks/doubleCheckMark}}{{>marks/waitMark}}{{>marks/errorMark}}
+          </main>
+          {{>inputSeparator/inputSeparator className="inputseparator"}}
+          {{>inputContainer/inputContainer className="inputcontainer chat__inputcontainer_margin_10px"
+          labelClassName="input input_wide" inputClassName="input__control input__control_with-adjustable-height
+          input__control_border-color_blue" sendButtonClassName="sednbutton sendbutton_size_m
+          sendbutton_color_lightblue"
+          placeholder="Cообщение..." type="search" }}
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>

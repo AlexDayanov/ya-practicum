@@ -1,0 +1,8 @@
+.inputcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.chat__inputcontainer_margin_10px {
+  margin: 10px;
+}
