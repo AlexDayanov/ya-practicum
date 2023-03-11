@@ -1,16 +1,8 @@
 <form class="form" id="{{formId}}" name="{{formName}}" action="{{formAction}}" autocomplete="{{formAutocomlete}}"
     novalidate="{{formNovalidate}}">
-    {{!-- {{>caption/caption class=captionClassName value="{{captionValue}}" }}
-    {{>avatar/avatar className=avatarClassName avatarImgClassName=imgClassName src=avatarSrc alt=avatarAlt}} --}}
 
     {{#each inputs}}
     {{>input/input input=.}}
     {{/each}}
 
 </form>
-
-
-
-{{!-- {
-inputs:[{labelClassName:"label"}]
-} --}}
