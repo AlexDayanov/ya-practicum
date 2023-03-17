@@ -1,0 +1,20 @@
+submit__button:focus {
+  border: 1px solid;
+}
+
+.submit__button_size_m {
+  width: 180px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.submit__button_color_lightblue {
+  background-color: var(--lightblue);
+  color: var(--white);
+}
+
+.submit__button_no_border {
+  border: none;
+}

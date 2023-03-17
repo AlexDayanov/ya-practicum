@@ -5,15 +5,17 @@
 @import "./addButton/addButton.css";
 @import "./burgerButton/burgerButton.css";
 @import "./sendButton/sendButton.css";
+@import "./submitButton/submitButton.css";
 @import "./input/input.css";
-@import "./inputContainer/inputContainer.css";
+@import "./formInput/formInput.css";
+@import "./formLink/formLink.css";
+@import "/src/partials/form/form.css";
+@import "./chatInput/chatInput.css";
 @import "./inputSeparator/inputSeparator.css";
 @import "./listContainer/listContainer.css";
 @import "./chatList/chatList.css";
 @import "./chat/chat.css";
 @import "./marks/index.css";
-
-/* TODO удалить */
-body {
-  /* background-color: lightgray; */
-}
+@import "./errorPage/errorPage.css";
+@import "./errorPageCaption/errorPageCaption.css";
+@import "./chatListItem/chatListItem.css";

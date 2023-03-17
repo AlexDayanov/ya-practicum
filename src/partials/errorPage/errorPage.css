@@ -1,0 +1,41 @@
+.errorpage {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorpage_color_gray {
+  background-color: var(--lightgray);
+}
+
+.errorpage__container {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.errorpage__container_round {
+  border-radius: 50%;
+}
+
+.errorpage__container_centered {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.errorpage__container_bordered {
+  border: 3px solid var(--lightblue);
+  border-radius: 50%;
+}
+
+.errorpage__container_color_white {
+  background-color: var(--white);
+}
+
+.errorpage__icon {
+  height: 110px;
+}

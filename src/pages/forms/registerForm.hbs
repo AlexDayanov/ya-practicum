@@ -1,0 +1,121 @@
+---
+registerForm: {
+
+formClassName: "form form_vertical-centered",
+formId: "",
+formName: "",
+formAction: "",
+autocomplete: true,
+novalidate: false
+,
+
+caption: {
+calssName: "",
+align: "center",
+caption: "Регистрация"
+},
+
+inputs: [
+{
+name: "firstName",
+value: "Василий",
+type: "text",
+placeholder: "Имя",
+autocomplete: true,
+required: true,
+inputHint: "Имя",
+errorMessage: ""
+},
+{
+name: "lastName",
+value: "Пупкин",
+type: "text",
+placeholder: "Фамилия",
+autocomplete: true,
+required: true,
+inputHint: "Фамилия",
+errorMessage: ""
+},
+{
+name: "telephone",
+value: "+12345678901",
+type: "tel",
+pattern: "\\+\\d{11}",
+placeholder: "+12345678901",
+autocomplete: true,
+required: true,
+inputHint: "Телефон",
+errorMessage: "Неверный формат номера"
+},
+{
+name: "email",
+value: "v.pupkin@domain.com",
+type: "email",
+placeholder: "Email",
+autocomplete: true,
+required: true,
+inputHint: "Email",
+errorMessage: ""
+},
+{
+name: "login",
+value: "v.pupkin",
+minlength: 2,
+maxlength: 15,
+type: "login",
+placeholder: "Имя в чате",
+autocomplete: true,
+required: true,
+inputHint: "Имя в чате",
+errorMessage: "от 2 до 15 символов"
+},
+{
+name: "password",
+value: "",
+minlength: 6,
+maxlength: 15,
+type: "password",
+placeholder: "Пароль",
+autocomplete: false,
+required: true,
+inputHint: "Пароль",
+errorMessage: "от 6 до 15 символов"
+},
+{
+name: "password",
+value: "",
+minlength: 6,
+maxlength: 15,
+type: "password",
+placeholder: "Ещё раз пароль",
+autocomplete: false,
+required: true,
+inputHint: "Ещё раз пароль",
+errorMessage: "от 6 до 15 символов"
+},
+],
+
+submitButton: {
+className: "submit__button submit__button_size_m submit__button_color_lightblue submit__button_no_border",
+name: "",
+caption: "Зарегистрироваться"
+},
+
+link: {
+href: "./loginForm.hbs",
+name: "",
+target: "",
+caption: "Войти",
+}
+}
+---
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    {{>form/form registerForm}}
+</body>

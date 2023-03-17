@@ -1,0 +1,16 @@
+.chatInput {
+  display: flex;
+  align-items: center;
+}
+
+.chatInput__input {
+  flex-grow: 1;
+}
+
+.chatInput__inputcontrol {
+  width: 100%;
+}
+
+.chatInput_margin_10x20px {
+  margin: 10px 20px;
+}

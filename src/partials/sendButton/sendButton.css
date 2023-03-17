@@ -6,6 +6,10 @@
   height: 30px;
 }
 
+.sendbutton_margin-left_10px {
+  margin-left: 10px;
+}
+
 .sendbutton_color_lightblue {
   color: var(--lightblue);
 }

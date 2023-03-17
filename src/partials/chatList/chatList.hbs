@@ -1,3 +1,5 @@
 <div class="{{className}}">
-    Chat List Here
+    {{#each items}}
+    {{>chatListItem/chatListItem item=.}}
+    {{/each}}
 </div>

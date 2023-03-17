@@ -1,0 +1,105 @@
+---
+profileForm: {
+
+formClassName: "form form_vertical-centered",
+formId: "profile",
+formName: "profile",
+formAction: "",
+autocomplete: true,
+novalidate: false,
+
+caption: {
+calssName: "",
+align: "center",
+caption: "Профиль"
+},
+
+avatar: {
+className: "avatar avatar_size_m avatar_shape_round",
+imgClassName: "avatar__img",
+src: "../../../assets/images/avatar2.jpeg",
+alt: "avatar"
+},
+
+inputs: [
+{
+name: "firstName",
+value: "Василий",
+minlength: 1,
+type: "text",
+placeholder: "Имя",
+autocomplete: true,
+required: true,
+inputHint: "Имя",
+errorMessage: "хотя бы один символ",
+},
+{
+name: "lastName",
+value: "Пупкин",
+minlength: 1,
+type: "text",
+placeholder: "Фамилия",
+autocomplete: true,
+required: true,
+inputHint: "Фамилия",
+errorMessage: "хотя бы один символ",
+},
+{
+name: "telephone",
+value: "+12345678901",
+type: "tel",
+pattern: "\\+\\d{11}",
+placeholder: "+12345678901",
+autocomplete: true,
+required: true,
+inputHint: "Телефон",
+errorMessage: "неверный формат номера"
+},
+{
+name: "email",
+value: "v.pupkin@domain.com",
+type: "email",
+placeholder: "Email",
+autocomplete: true,
+required: true,
+inputHint: "Email",
+errorMessage: "неверный формат адреса"
+},
+{
+name: "login",
+value: "v.pupkin",
+minlength: 2,
+maxlength: 15,
+type: "login",
+placeholder: "Имя в чате",
+autocomplete: true,
+required: true,
+inputHint: "Имя в чате",
+errorMessage: "от 2 до 15 символов"
+},
+],
+
+submitButton: {
+className: "submit__button submit__button_size_m submit__button_color_lightblue submit__button_no_border",
+name: "",
+caption: "Сохранить"
+},
+
+link: {
+href: "./passwordForm.hbs",
+name: "",
+target: "",
+caption: "Сменить пароль",
+}
+}
+---
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    {{>form/form profileForm}}
+</body>

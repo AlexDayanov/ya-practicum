@@ -1,0 +1,60 @@
+---
+loginForm: {
+
+formClassName: "form form_vertical-centered",
+formId: "",
+formName: "",
+formAction: "",
+autocomplete: true,
+novalidate: false,
+
+caption: {
+calssName:"",
+align: "center",
+caption: "Вход"
+},
+inputs: [
+{
+name: "login",
+value: "",
+type: "login",
+placeholder: "Логин",
+autocomplete: true,
+required: true,
+inputHint: "Логин",
+errorMessage: "",
+},
+{
+name: "password",
+value: "",
+type: "password",
+placeholder: "Пароль",
+autocomplete: true,
+required: true,
+inputHint: "Пароль",
+errorMessage: "",
+}
+],
+submitButton: {
+className: "submit__button submit__button_size_m submit__button_color_lightblue submit__button_no_border",
+name: "",
+caption: "Войти"
+},
+link: {
+href: "./registerForm.hbs",
+name: "",
+target: "",
+caption: "Создать профиль",
+}
+}
+---
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    {{>form/form loginForm}}
+</body>

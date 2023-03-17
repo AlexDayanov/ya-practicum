@@ -1,15 +1,17 @@
 .input {
   text-align: center;
+  position: relative;
+  display: block;
 }
 
 .input_wide {
   width: 100%;
-  margin: 0 10px;
 }
 
 .input__control {
+  position: relative;
   outline: none;
-  width: 100%;
+  padding: 5px 10px;
 }
 
 .input__control_with-adjustable-height {
@@ -17,12 +19,8 @@
 }
 
 .input__control_border-color_blue {
-  border: 1px solid var(--lightgray);
-  border-radius: 7px;
-}
-
-.input__control_border-color_blue:focus {
   border: 1px solid var(--lightblue);
+  border-radius: 7px;
 }
 
 .input__error {
@@ -36,16 +34,14 @@
   color: red;
 }
 
-/* TODO разобраться с размером шрифта  */
-.input__error_font-size_15 {
-  font-size: 15;
+.input__error_font-size_13 {
+  font-size: 13px;
 }
 
 .input__control:required:not(:focus):not(:placeholder-shown):invalid
   ~ .input__error {
   visibility: visible;
-  transform: translate(2px, 1.25em);
-  transition: all 0.3s ease-out;
+  transform: translate(2px, 2.5em);
 }
 
 .input__control:required:not(:focus):not(:placeholder-shown):invalid {
@@ -57,14 +53,14 @@
 }
 
 .input__hint {
+  font-size: 13px;
   position: absolute;
   visibility: hidden;
   top: 0;
   left: 0;
 }
 
-.input__control:required:not(:placeholder-shown) ~ .input__hint {
+.input__control:not(:placeholder-shown):focus ~ .input__hint {
   visibility: visible;
-  transform: translate(2px, -1.25em);
-  transition: all 0.1s ease-out;
+  transform: translate(2px, -1.1em);
 }

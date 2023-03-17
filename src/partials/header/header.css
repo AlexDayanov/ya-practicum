@@ -2,8 +2,8 @@
   display: flex;
 }
 
-.header__chatapp {
-  height: 100px;
+.chatapp__header {
+  height: 90px;
   flex-shrink: 0;
   align-items: center;
   justify-content: space-between;
@@ -13,3 +13,4 @@
 .header_gray {
   background-color: var(--lightgray);
 }
+
