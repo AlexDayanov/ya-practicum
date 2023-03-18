@@ -1,5 +1,5 @@
 .chat {
   flex-grow: 1;
-  box-sizing: border-box;
   padding: 0 20px;
+  overflow: hidden;
 }

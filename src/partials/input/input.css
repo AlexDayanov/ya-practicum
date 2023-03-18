@@ -34,14 +34,14 @@
   color: red;
 }
 
-.input__error_font-size_13 {
-  font-size: 13px;
+.input__error_font-size_11 {
+  font-size: 11px;
 }
 
 .input__control:required:not(:focus):not(:placeholder-shown):invalid
   ~ .input__error {
   visibility: visible;
-  transform: translate(2px, 2.5em);
+  transform: translate(10px, 3em);
 }
 
 .input__control:required:not(:focus):not(:placeholder-shown):invalid {
@@ -62,5 +62,5 @@
 
 .input__control:not(:placeholder-shown):focus ~ .input__hint {
   visibility: visible;
-  transform: translate(2px, -1.1em);
+  transform: translate(10px, -1.15em);
 }

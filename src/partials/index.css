@@ -19,3 +19,5 @@
 @import "./errorPage/errorPage.css";
 @import "./errorPageCaption/errorPageCaption.css";
 @import "./chatListItem/chatListItem.css";
+@import "./chatItem/chatItem.css";
+@import "./chatMessage/chatMessage.css";

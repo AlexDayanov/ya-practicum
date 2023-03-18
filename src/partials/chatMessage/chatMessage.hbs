@@ -1,0 +1,15 @@
+<div {{#if isOutcoming}} class="chatmessage chatmessage_isoutcoming" {{/if}} class="chatmessage">
+    {{#unless isOutcoming}}<div class="chatmessage__sender">{{sender}}</div>{{/unless}}
+    <div class="chatmessage__content">{{messageContent}}</div>
+    <div class="chatmessage__statuscontainer">
+        <div class="chatmessage__time">{{time}}</div>
+        {{#if isOutcoming}}
+        <div class="chatmessage__deliverystatus">
+            {{#if status.isRead }} {{>marks/doubleCheckMark}} {{/if}}
+            {{#if status.isSent }} {{>marks/checkMark}} {{/if}}
+            {{#if status.isWaiting }} {{>marks/waitMark}} {{/if}}
+            {{#if status.isError }} {{>marks/errorMark}} {{/if}}
+        </div>
+        {{/if}}
+    </div>
+</div>

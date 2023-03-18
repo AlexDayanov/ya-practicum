@@ -1,0 +1,30 @@
+.chatmessage {
+  position: relative;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 30px;
+  background-color: var(--lightmint);
+}
+
+.chatmessage_isoutcoming {
+  background-color: var(--lightplum);
+}
+
+.chatmessage__sender {
+  font-weight: 600;
+}
+
+.chatmessage__time {
+  font-size: 11px;
+  color: var(--midgray);
+}
+
+.chatmessage__statuscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: min-content;
+  font-size: 12px;
+  color: var(--gray);
+}

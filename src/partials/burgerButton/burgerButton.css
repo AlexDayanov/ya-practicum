@@ -6,7 +6,7 @@
 }
 
 .burgerbutton_color_lightblue {
-  color: var(--lightblue);
+  color: var(--black);
 }
 
 .burgerbutton:hover {

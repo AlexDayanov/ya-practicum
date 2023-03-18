@@ -1,4 +1,5 @@
 ---
+context: {
 chatList: {
 className: "chatlist" ,
 items: [
@@ -8,12 +9,36 @@ className: "avatar avatar_size_m avatar_shape_round",
 imgClassName: "avatar__img",
 src: "./assets/images/avatar2.jpeg",
 alt: "avatar",
-isOnline: false,
+isOnline: true,
 },
 name: "Glassy",
-message: "Nunc consectetur sem in enim accumsan mollis. Aenean elit",
+message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua",
 time: "18:26",
-
+},
+{
+avatar: {
+className: "avatar avatar_size_m avatar_shape_round",
+imgClassName: "avatar__img",
+src: "./assets/images/avatar1.jpeg",
+alt: "avatar",
+isOnline: false,
+},
+name: "Froggy",
+message: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+time: "18:27",
+},
+{
+avatar: {
+className: "avatar avatar_size_m avatar_shape_round",
+imgClassName: "avatar__img",
+src: "./assets/images/avatar2.jpeg",
+alt: "avatar",
+isOnline: false,
+},
+name: "Smiley",
+message: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+time: "18:28",
 },
 {
 avatar: {
@@ -23,11 +48,68 @@ src: "./assets/images/avatar1.jpeg",
 alt: "avatar",
 isOnline: true,
 },
-name: "Froggy",
-message: "Nunc consectetur sem in enim accumsan mollis. Aenean elit",
-time: "18:27",
+name: "Kitty",
+message: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+laborum",
+time: "18:29",
 }
 ]
+},
+
+chat: {
+chatItems: [
+{
+message:
+{isOutcoming: false,
+messageContent: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+laborum",
+sender: "Froggy",
+time: "18:28",
+status: {isRead: true},
+},
+},
+{
+message:
+{isOutcoming: true,
+messageContent: "Pellentesque consequat ligula ac pretium dignissim",
+sender: "Froggy",
+time: "18:29",
+status: {isRead: true},
+},
+},
+{
+message:
+{isOutcoming: true,
+messageContent: "Proin elementum est quis velit volutpat, at sollicitudin sem cursus. In feugiat elit quis tempus
+maximus",
+sender: "Glassy",
+time: "18:30",
+status: {isSent: true},
+},
+},
+{
+message:
+{isOutcoming: true,
+messageContent: "Donec mattis velit nisi. Ut fringilla lectus vitae ante congue, id accumsan lectus maximus. Maecenas
+laoreet elit non condimentum dapibus. Curabitur enim ipsum, lobortis sit amet erat nec, dapibus cursus nisl",
+sender: "Glassy",
+time: "18:31",
+status: {isWaiting: true},
+},
+},
+{
+message:
+{isOutcoming: true,
+messageContent: "Nam fermentum bibendum nibh non suscipit. Nulla tristique orci a posuere pretium. Nulla mollis sit amet
+eros vel auctor. Sed hendrerit sodales lorem id efficitur. Morbi nisi lorem, convallis quis odio ac, mollis elementum
+libero. Sed euismod tincidunt magna, quis porttitor ex convallis at. Curabitur vel malesuada odio. ",
+sender: "Glassy",
+time: "18:32",
+status: {isError: true},
+},
+},
+],
+}
 }
 ---
 
@@ -53,8 +135,9 @@ time: "18:27",
         </div>
 
         <aside class="listcontainer">
-          {{>chatList/chatList chatList}}
-          <div>
+          {{>chatList/chatList context.chatList}}
+
+          <div style="height: 50px; text-align:center">
             <a href="./src/pages/forms/loginForm.hbs">Логин</a>
             <a href="./src/pages/forms/registerForm.hbs">Регистрация</a>
             <a href="./src/pages/forms/profileForm.hbs">Профиль</a>
@@ -62,7 +145,6 @@ time: "18:27",
             <a href="./src/pages/errorPage5xx.hbs">5xx</a>
           </div>
         </aside>
-
       </div>
 
       <div class="column chatapp__column chat__column">
@@ -79,15 +161,13 @@ time: "18:27",
         </div>
 
         <div class="listcontainer chat__listcontainer  chat__listcontainer_max-width-1024px">
-          <main class="chat">
-            {{!-- {{>marks/checkMark}}{{>marks/doubleCheckMark}}{{>marks/waitMark}}{{>marks/errorMark}} --}}
-          </main>
+          {{>chat/chat context.chat }}
           {{>inputSeparator/inputSeparator className="inputseparator"}}
           {{>chatInput/chatInput className="chatInput chatInput_margin_10x20px"
           labelClassName="input chatInput__input" inputClassName="input__control chatInput__inputcontrol
           input__control_with-adjustable-height
-          input__control_border-color_blue" sendButtonClassName="sednbutton sendbutton_size_m
-          sendbutton_margin-left_10px sendbutton_color_lightblue"
+          input__control_border-color_blue" sendbuttonClassName="sednbutton chatinput__sendbutton_size_m
+          chatinput__sendbutton_margin-left_10px chatinput__sendbutton_color_lightblue"
           placeholder="Cообщение..." type="search" }}
 
         </div>

@@ -1,21 +1,17 @@
-.sendbutton {
-}
-
-.sendbutton_size_m {
+.chatinput__sendbutton_size_m {
   width: 30px;
   height: 30px;
 }
 
-.sendbutton_margin-left_10px {
+.chatinput__sendbutton_margin-left_10px {
   margin-left: 10px;
 }
 
-.sendbutton_color_lightblue {
+.chatinput__sendbutton_color_lightblue {
   color: var(--lightblue);
 }
 
 /* TODO не работает :hover */
-.sendbutton:hover {
-  box-sizing: border-box;
+.chatinput__sendbutton:hover {
   border: 1px solid var(--lightlilac);
 }

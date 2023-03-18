@@ -1,0 +1,12 @@
+.chatitem {
+}
+
+.chatitem__messagewrapper {
+  width: fit-content;
+  max-width: 90%;
+  margin-right: 33%;
+}
+
+.chatitem__messagewrapper_outcoming {
+  margin-left: 33%;
+}
