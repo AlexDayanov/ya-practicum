@@ -108,6 +108,16 @@ time: "18:32",
 status: {isError: true},
 },
 },
+{
+message:
+{isOutcoming: false,
+messageContent: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+laborum",
+sender: "Kitty",
+time: "18:23",
+status: {isRead: true},
+},
+},
 ],
 }
 }
@@ -152,7 +162,7 @@ status: {isError: true},
         <div class="header chatapp__header header_gray">
           <div class="header__avatar">
             {{>avatar/avatar className="avatar avatar_size_m avatar_shape_round" imgClassName="avatar__img"
-            src='./assets/images/avatar1.jpeg' alt='avatar'}}
+            src="./assets/images/avatar1.jpeg" alt="avatar"}}
           </div>
           {{>input/input labelClassName="input " inputClassName="input__control
           input__control_with-adjustable-height
@@ -163,7 +173,7 @@ status: {isError: true},
         <div class="listcontainer chat__listcontainer  chat__listcontainer_max-width-1024px">
           {{>chat/chat context.chat }}
           {{>inputSeparator/inputSeparator className="inputseparator"}}
-          {{>chatInput/chatInput className="chatInput chatInput_margin_10x20px"
+          {{>chatInput/chatInput name="message" className="chatInput chatInput_margin_10x20px"
           labelClassName="input chatInput__input" inputClassName="input__control chatInput__inputcontrol
           input__control_with-adjustable-height
           input__control_border-color_blue" sendbuttonClassName="sednbutton chatinput__sendbutton_size_m

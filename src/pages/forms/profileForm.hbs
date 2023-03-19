@@ -15,6 +15,7 @@ caption: "Профиль"
 },
 
 avatar: {
+name: "avatar",
 className: "avatar avatar_size_m avatar_shape_round",
 imgClassName: "avatar__img",
 src: "../../../assets/images/avatar2.jpeg",
@@ -23,7 +24,7 @@ alt: "avatar"
 
 inputs: [
 {
-name: "firstName",
+name: "first_name",
 value: "Василий",
 minlength: 1,
 type: "text",
@@ -34,7 +35,7 @@ inputHint: "Имя",
 errorMessage: "хотя бы один символ",
 },
 {
-name: "lastName",
+name: "second_name",
 value: "Пупкин",
 minlength: 1,
 type: "text",
@@ -45,7 +46,7 @@ inputHint: "Фамилия",
 errorMessage: "хотя бы один символ",
 },
 {
-name: "telephone",
+name: "phone",
 value: "+12345678901",
 type: "tel",
 pattern: "\\+\\d{11}",
