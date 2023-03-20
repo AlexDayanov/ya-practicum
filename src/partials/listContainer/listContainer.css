@@ -8,8 +8,6 @@
   display: contents;
   width: 100%;
   min-width: min-content;
-  max-width: 1024px;
-  align-self: center;
 }
 
 .chat__listcontainer_max-width-1024px {
