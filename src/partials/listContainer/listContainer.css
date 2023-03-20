@@ -1,6 +1,6 @@
 .listcontainer {
   flex-grow: 1;
-  display: flex;
+  display: contents;
   flex-direction: column;
 }
 
